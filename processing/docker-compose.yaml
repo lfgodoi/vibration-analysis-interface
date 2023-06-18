@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  processing-service:
+    container_name: processing-service
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: vai/processing:latest
+    ports:
+      5002:5002
+    networks:
+      - vai-network
+
+networks:
+  vai-network:
+    external: true

@@ -13,7 +13,7 @@ from sources.routes.index import index_bp
 # Setting the app
 template_folder = os.path.abspath('./sources/templates/pages')
 app = Flask(__name__, template_folder=template_folder)
-app.config["SECRET_KEY"] = "mYkEy"
+app.config["SECRET_KEY"] = "VAIuI"
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # Registering routes

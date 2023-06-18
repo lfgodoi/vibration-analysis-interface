@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  ui-service:
+    container_name: ui-service
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: vai/ui:latest
+    ports:
+      5001:5001
+    networks:
+      - vai-network
+
+networks:
+  vai-network:
+    driver: bridge
